@@ -10,8 +10,8 @@ spring:
           uri: https://github.com/jwen1994/sprincloud-config.git
           search-paths:
             - springcloud-config
-          username: 526464869@qq.com
-          password: wj_870096
+          username: 123@qq.com
+          password: 123456
       label: master
 eureka:
   client:
