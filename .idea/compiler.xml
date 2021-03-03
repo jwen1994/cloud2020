@@ -27,6 +27,7 @@
         <module name="cloudalibaba-consumer-nacos-order83" />
         <module name="cloud-consumer-order80" />
         <module name="cloud-provider-hystrix-payment8001" />
+        <module name="cloudalibaba-sentinel-service8401" />
         <module name="cloud-config-client-3355" />
         <module name="cloud-config-client-3366" />
         <module name="cloud-consumer-feign-order80" />
@@ -57,6 +58,7 @@
       <module name="cloudalibaba-consumer-nacos-order83" target="8" />
       <module name="cloudalibaba-provider-payment9001" target="8" />
       <module name="cloudalibaba-provider-payment9002" target="8" />
+      <module name="cloudalibaba-sentinel-service8401" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
