@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
-
 @Service
 @Slf4j
 public class OrderServiceImpl implements OrderService {
@@ -25,7 +24,6 @@ public class OrderServiceImpl implements OrderService {
     /**
      * 创建订单->调用库存服务扣减库存->调用账户服务扣减账户余额->修改订单状态
      */
-
     @Override
     @GlobalTransactional(name = "fsp-create-order", rollbackFor = Exception.class)
     public void create(Order order) {
@@ -50,7 +48,5 @@ public class OrderServiceImpl implements OrderService {
         log.info("----->修改订单状态结束");
 
         log.info("----->下订单结束了");
-
     }
 }
-

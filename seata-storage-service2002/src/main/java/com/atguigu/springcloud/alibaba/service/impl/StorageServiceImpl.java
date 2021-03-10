@@ -23,4 +23,3 @@ public class StorageServiceImpl implements StorageService {
         LOGGER.info("------->storage-service中扣减库存结束");
     }
 }
-

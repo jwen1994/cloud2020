@@ -19,4 +19,3 @@ public class StorageController {
         return new CommonResult(200, "扣减库存成功！");
     }
 }
-

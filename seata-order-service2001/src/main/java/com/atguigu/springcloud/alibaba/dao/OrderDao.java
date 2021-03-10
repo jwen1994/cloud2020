@@ -12,4 +12,3 @@ public interface OrderDao {
     //修改订单状态，从零改为1
     void update(@Param("userId") Long userId, @Param("status") Integer status);
 }
-

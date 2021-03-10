@@ -12,4 +12,3 @@ public interface AccountDao {
      */
     void decrease(@Param("userId") Long userId, @Param("money") BigDecimal money);
 }
-

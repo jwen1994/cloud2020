@@ -10,4 +10,3 @@ public interface StorageService {
     @PostMapping(value = "/storage/decrease")
     CommonResult decrease(@RequestParam("productId") Long productId, @RequestParam("count") Integer count);
 }
-

@@ -38,4 +38,3 @@ public class DataSourceProxyConfig {
         return sqlSessionFactoryBean.getObject();
     }
 }
-
