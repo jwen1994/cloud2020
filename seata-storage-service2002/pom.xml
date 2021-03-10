@@ -27,16 +27,24 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
             <exclusions>
-                <!--移除掉该starter中自带的依赖，该依赖版本较低-->
                 <exclusion>
                     <groupId>io.seata</groupId>
-                    <artifactId>seata-spring-boot-starter</artifactId>
+                    <artifactId>seata-all</artifactId>
                 </exclusion>
+                <!--<exclusion>
+                    <groupId>io.seata</groupId>
+                    <artifactId>seata-spring-boot-starter</artifactId>
+                </exclusion>-->
             </exclusions>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>io.seata</groupId>
             <artifactId>seata-spring-boot-starter</artifactId>
+            <version>1.4.0</version>
+        </dependency>-->
+        <dependency>
+            <groupId>io.seata</groupId>
+            <artifactId>seata-all</artifactId>
             <version>1.4.0</version>
         </dependency>
         <!--feign-->

@@ -16,9 +16,9 @@ spring:
 
 seata:
   enabled: true
-  application-id: ${spring.application.name}
+  application-id: seata-account-service
   # 事务群组（可以每个应用独立取名，也可以使用相同的名字），要与服务端nacos-config.txt中service.vgroup_mapping的后缀对应
-  tx-service-group: ${spring.application.name}
+  tx-service-group: abc-tx-group
   config:
     type: nacos
     # 需要和server在同一个注册中心下
@@ -27,8 +27,8 @@ seata:
       serverAddr: 192.168.216.132:8848
       # 需要server端(registry和config)、nacos配置client端(registry和config)保持一致
       group: SEATA_GROUP
-      username: "nacos"
-      password: "nacos"
+      username: nacos
+      password: nacos
   registry:
     type: nacos
     nacos:
@@ -37,8 +37,8 @@ seata:
       server-addr: 192.168.216.132:8848
       group: SEATA_GROUP
       namespace: d52e8d91-7a2c-4f07-95de-083633fc31e3
-      username: "nacos"
-      password: "nacos"
+      username: nacos
+      password: nacos
 
 logging:
   level:

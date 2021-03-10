@@ -2,6 +2,7 @@ package com.atguigu.springcloud.alibaba.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import io.seata.rm.datasource.DataSourceProxy;
+import io.seata.spring.annotation.GlobalTransactionScanner;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.transaction.SpringManagedTransactionFactory;
